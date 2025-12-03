@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1F26;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+}
+
+.searchDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 10px;
+}
+
+.results, .favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.videoCard {
+  background-color: #fffffe;
+  padding: 10px;
+  border-radius: 6px;
+  width: calc(33.333% - 10px);
+  color: #2a2b34;
+  text-align: center;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08), 0 2px 4px 0 rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+      animation: 1s fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h2.searchResults {
+    font-size:2.3rem;
+          animation: 1s fadeInUp;
+
+}
+
+.videoCard img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.videoCard button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.introText {
+  color: white;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+h2.h2intro {
+  font-size: 2.5rem;
+}
+
+button.searchButton {
+    background-color:#FF0000!important;
+    color:white;
+}
+
+.container {
+  width: 100%;
+  height: auto; 
+  margin-top: 20px; 
+}
+
+.search-bar {
+  width: 80%;     
+  margin: 0 auto;      
+  line-height: normal;  
+  position: relative;
+  margin-top: 0;       
+      display: flex;
+    justify-content: center;
+}
+
+
+.searchDiv {
+    position: relative;
+    margin-top: 1rem;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:100%!important;
+    margin-top:6rem;
+}
+
+input.searchBar {
+    width: 80%;
+    height:100%;
+    height: 2.5rem;
+    background-color:#fff;
+    color: #262926;
+}
+
+div.introText {
+    margin-top:6rem;
+}
+
+h2.h2intro {
+    font-size:2.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .videoCard {
+    width: 90%;
+  }
+
+  input.searchBar {
+    width: 80%;
+  }
+
+  .introText {
+    margin-top: 3rem;
+  }
+}
