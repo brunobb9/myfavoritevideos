@@ -36,7 +36,7 @@ export default function Search() {
     <div className="container">
       <div className={`favoritesSidebar ${sidebarOpen ? "open" : "closed"}`}>
         <div className="favoritesHeader">
-          <h3>Favorites</h3>
+          <h3 style={{ marginLeft: "20%" }}>Favorites</h3>
           <button
             className="sidebarToggle"
             onClick={() => setSidebarOpen(!sidebarOpen)}
