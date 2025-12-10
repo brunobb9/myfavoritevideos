@@ -26,5 +26,16 @@ height:75px;
 .intro {
     font-size:2rem!important;
     color:#262926;
+}
 
+@media (max-width: 768px) {
+.iconYT {
+display:none;
+}
+
+.intro {
+    font-size:2rem!important;
+    color:#262926;
+    margin-left:20px;
+}
 }

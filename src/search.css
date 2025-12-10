@@ -133,6 +133,76 @@ h2.h2intro {
     font-size:2.5rem;
 }
 
+.favoritesSidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  background-color: #262926;
+  border-right: 2px solid #222;
+  padding: 10px;
+  color: white;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.favoritesSidebar.closed {
+  transform: translateX(-210px);
+}
+
+.favoritesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.sidebarToggle {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+.favoritesList {
+  margin-top: 10px;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  background-color: #1a1a1a;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.favoriteItem img {
+  width: 70px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.favInfo p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.favInfo button {
+  font-size: 12px;
+  background-color: red;
+  border: none;
+  padding: 3px 6px;
+  color: white;
+  cursor: pointer;
+}
+
+
 
 @media (max-width: 768px) {
   .videoCard {
@@ -141,6 +211,7 @@ h2.h2intro {
 
   input.searchBar {
     width: 80%;
+    margin-left:20px;
   }
 
   .introText {
