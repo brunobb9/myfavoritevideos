@@ -172,6 +172,10 @@ h2.h2intro {
   margin-top: 10px;
 }
 
+h3.favoritesh3 {
+  margin-left:20%;
+}
+
 .favoriteItem {
   display: flex;
   align-items: center;
@@ -237,5 +241,13 @@ h2.searchResults {
 
 #root {
   padding-left:3rem;
+}
+
+h3.favoritesh3 {
+  margin-left:40%!important;
+}
+
+h1.intro {
+  margin-left:2.5rem!important;
 }
 }
