@@ -218,4 +218,24 @@ h2.h2intro {
   .introText {
     margin-top: 3rem;
   }
+
+  .favoritesSidebar.open {
+  width:100%;
+}
+
+  .favoritesSidebar.closed {
+  width:260px!important;
+}
+
+div.results {
+  margin-left:1.5rem;
+}
+
+h2.searchResults {
+  margin-left:1rem;
+}
+
+#root {
+  padding-left:3rem;
+}
 }
